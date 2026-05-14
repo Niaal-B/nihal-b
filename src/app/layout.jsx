@@ -1,0 +1,154 @@
+import "./globals.css";
+import { Toaster } from "@/components/ui/toaster";
+import NavigationBar from "@/components/sections/navigation";
+import Footer from "@/components/sections/footer";
+import TopLoader from "@/components/top-loader";
+import OnekoCat from "@/components/OnekoCat";
+import { SmoothScrollProvider } from "@/components/smooth-scroll-provider";
+import { ThemeProvider } from "@/components/theme-provider";
+import { ScrollToTopButton } from "@/components/scroll-to-top";
+
+export const metadata = {
+  title: {
+    template: "Nihal - %s  ",
+    default: "Nihal - Python Backend Developer",
+  },
+  description:
+    "Backend developer focused on building scalable full-stack applications using Python and modern web technologies.",
+  keywords: [
+    "Nihal B",
+    "Python Backend Developer",
+    "Django",
+    "FastAPI",
+    "React",
+    "PostgreSQL",
+    "Docker",
+    "Redis",
+    "Web Development",
+    "Portfolio",
+    "Software Engineer",
+  ],
+  authors: [{ name: "Nihal B" }],
+  creator: "Nihal B",
+  publisher: "Nihal B",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  icons: {
+    icon: "https://notion-avatar.app/api/svg/eyJmYWNlIjo0LCJub3NlIjozLCJtb3V0aCI6MSwiZXllcyI6MTAsImV5ZWJyb3dzIjoxLCJnbGFzc2VzIjoxMCwiaGFpciI6MzIsImFjY2Vzc29yaWVzIjowLCJkZXRhaWxzIjowLCJiZWFyZCI6MCwiZmxpcCI6MSwiY29sb3IiOiJ0cmFuc3BhcmVudCIsInNoYXBlIjoibm9uZSJ9",
+    shortcut: "/favicon.ico",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://github.com/Niaal-B",
+    title: "Nihal B - Python Backend Developer",
+    description:
+      "Backend developer focused on building scalable full-stack applications using Python and modern web technologies.",
+    siteName: "Nihal B Portfolio",
+    images: [
+      {
+        url: "https://github.com/Niaal-B.png",
+        width: 1200,
+        height: 630,
+        alt: "Nihal B - Python Backend Developer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nihal B - Python Backend Developer",
+    description:
+      "Backend developer focused on building scalable full-stack applications using Python and modern web technologies.",
+    images: ["https://github.com/Niaal-B.png"],
+    creator: "@Niaal_B",
+  },
+  alternates: {
+    canonical: "https://github.com/Niaal-B",
+  },
+};
+
+import { GeistPixelSquare } from "geist/font/pixel";
+import { Space_Mono, Press_Start_2P } from "next/font/google";
+
+const spaceMono = Space_Mono({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-space-mono",
+  display: "swap",
+});
+
+const pressStart = Press_Start_2P({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-press-start",
+  display: "swap",
+});
+
+export default function RootLayout({ children }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Nihal B",
+    jobTitle: "Python Backend Developer",
+    description:
+      "Backend developer focused on building scalable full-stack applications using Python and modern web technologies.",
+    url: "https://github.com/Niaal-B",
+    image: "https://github.com/Niaal-B.png",
+  };
+
+  return (
+    <html lang="en" suppressHydrationWarning className={`${spaceMono.variable} ${pressStart.variable}`}>
+      <head>
+        <meta name="theme-color" content="#0B0D0E" />
+        <meta name="color-scheme" content="dark light" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap"
+          rel="stylesheet"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
+      <body>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <TopLoader />
+          <SmoothScrollProvider>
+            <div className="grid min-h-[100dvh] grid-rows-[1fr_auto] overflow-x-hidden">
+              <main
+                className={`${GeistPixelSquare.className} max-w-[1800px] px-6 pt-14 md:mx-auto md:px-0 md:pt-24`}
+              >
+                <OnekoCat />
+                {children}
+              </main>
+              <Footer />
+              <NavigationBar />
+              <Toaster />
+              <ScrollToTopButton />
+            </div>
+          </SmoothScrollProvider>
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}
