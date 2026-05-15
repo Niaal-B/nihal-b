@@ -22,7 +22,7 @@ export const notableAchievements = [
     title: "Production Systems",
     body: [
       { text: "Built multiple " },
-      { text: "production-style backend systems", bold: true },
+      { text: "full-stack production systems", bold: true },
       { text: " independently, focusing on scalability and clean architecture." },
     ],
   },
@@ -47,17 +47,17 @@ export const notableAchievements = [
 ];
 
 export const intros = [
-  "Python Backend Developer",
-  "Django Expert",
-  "FastAPI Developer",
+  "Full Stack Developer",
+  "Django & React Expert",
+  "Next.js Developer",
   "Problem Solver",
-  "Back-end Architect",
+  "Full-stack Architect",
   "Open Source Contributor",
 ];
 
 export const experiences = [
   {
-    role: "Freelance Backend Developer",
+    role: "Freelance Full Stack Developer",
     year: "2024 - Present",
     company: "Freelance",
     type: "Freelance",
@@ -66,9 +66,9 @@ export const experiences = [
     responsibility: [
       [
         { text: "Developed " },
-        { text: "backend APIs", bold: true },
+        { text: "full-stack applications", bold: true },
         { text: " using " },
-        { text: "Django and FastAPI", bold: true },
+        { text: "Django, React, and Next.js", bold: true },
         { text: " for various clients." },
       ],
       [
@@ -83,7 +83,7 @@ export const experiences = [
       ],
       [
         { text: "Worked on " },
-        { text: "Dockerized backend environments", bold: true },
+        { text: "Dockerized full-stack environments", bold: true },
         { text: " for consistent deployment and local development." },
       ],
       [
@@ -97,6 +97,8 @@ export const experiences = [
     techstacks: [
       "Python",
       "Django",
+      "React",
+      "Next.js",
       "FastAPI",
       "PostgreSQL",
       "Redis",

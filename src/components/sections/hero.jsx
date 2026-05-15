@@ -61,9 +61,9 @@ const socialLinks = [
 ];
 
 const achievementStats = [
-  { value: "Backend", label: "Specialist" },
+  { value: "Full Stack", label: "Developer" },
   { value: "Django", label: "Expertise" },
-  { value: "FastAPI", label: "Developer" },
+  { value: "React", label: "Frontend" },
   { value: "Docker", label: "Infra" },
 ];
 
@@ -472,7 +472,7 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
           </div>
 
           <p className="mt-2 text-[11px] font-medium uppercase tracking-widest text-muted-foreground md:text-sm">
-            Python Backend Developer focused on building scalable applications
+            Full Stack Developer focused on building complete web solutions
           </p>
         </div>
 
@@ -491,12 +491,12 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
           <p className="font-space-mono text-xs text-muted-foreground md:text-base md:leading-relaxed">
             I&apos;m Nihal, a{" "}
             <strong className="font-semibold text-foreground">
-              Python Backend Developer
+              Full Stack Developer
             </strong>{" "}
-            passionate about building scalable, production-style web applications. My primary expertise includes Python, Django, FastAPI, PostgreSQL, Docker, Redis, and real-time systems.
+            passionate about building complete, production-style web applications. My primary expertise includes Python, Django, React, Next.js, FastAPI, PostgreSQL, Docker, and real-time systems.
           </p>
           <p className="mt-4 font-space-mono text-xs text-muted-foreground md:text-base md:leading-relaxed">
-            I&apos;ve built projects ranging from mentorship platforms with real-time communication to scalable backend systems involving authentication, APIs, and database architecture. I enjoy solving backend architecture problems, building APIs, and continuously learning modern technologies.
+            I&apos;ve built projects ranging from mentorship platforms with real-time communication to full-stack e-commerce solutions. I enjoy solving complex architecture problems across the entire stack, from building robust APIs to crafting intuitive user interfaces.
           </p>
           <p className="mt-4 font-space-mono text-xs text-muted-foreground md:text-base md:leading-relaxed">
             I&apos;ve also undergone intensive practical training through a bootcamp environment, which strengthened my problem-solving skills, self-learning ability, and hands-on development experience.

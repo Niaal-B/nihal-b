@@ -11,16 +11,17 @@ import { ScrollToTopButton } from "@/components/scroll-to-top";
 export const metadata = {
   title: {
     template: "Nihal - %s  ",
-    default: "Nihal - Python Backend Developer",
+    default: "Nihal - Full Stack Developer",
   },
   description:
-    "Backend developer focused on building scalable full-stack applications using Python and modern web technologies.",
+    "Full Stack Developer focused on building scalable web applications using modern technologies.",
   keywords: [
     "Nihal B",
-    "Python Backend Developer",
+    "Full Stack Developer",
+    "Next.js",
+    "React",
     "Django",
     "FastAPI",
-    "React",
     "PostgreSQL",
     "Docker",
     "Redis",
@@ -50,24 +51,24 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     url: "https://github.com/Niaal-B",
-    title: "Nihal B - Python Backend Developer",
+    title: "Nihal B - Full Stack Developer",
     description:
-      "Backend developer focused on building scalable full-stack applications using Python and modern web technologies.",
+      "Full Stack Developer focused on building scalable web applications using modern technologies.",
     siteName: "Nihal B Portfolio",
     images: [
       {
         url: "https://github.com/Niaal-B.png",
         width: 1200,
         height: 630,
-        alt: "Nihal B - Python Backend Developer",
+        alt: "Nihal B - Full Stack Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nihal B - Python Backend Developer",
+    title: "Nihal B - Full Stack Developer",
     description:
-      "Backend developer focused on building scalable full-stack applications using Python and modern web technologies.",
+      "Full Stack Developer focused on building scalable web applications using modern technologies.",
     images: ["https://github.com/Niaal-B.png"],
     creator: "@Niaal_B",
   },
@@ -98,9 +99,9 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Nihal B",
-    jobTitle: "Python Backend Developer",
+    jobTitle: "Full Stack Developer",
     description:
-      "Backend developer focused on building scalable full-stack applications using Python and modern web technologies.",
+      "Full Stack Developer focused on building scalable web applications using modern technologies.",
     url: "https://github.com/Niaal-B",
     image: "https://github.com/Niaal-B.png",
   };

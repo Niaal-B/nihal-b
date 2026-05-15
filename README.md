@@ -1,14 +1,15 @@
-# Nihal B | Python Backend Developer
+# Nihal B | Full Stack Developer
 
-A passionate Python Backend Developer focused on building scalable, production-style web applications and real-time systems.
+A passionate Full Stack Developer focused on building complete, production-style web applications and real-time systems.
 
 ---
 
 ## 🚀 About Me
 
-I'm Nihal, a backend specialist with expertise in building robust APIs and architecting scalable systems. My journey involves developing everything from mentorship platforms to e-commerce backends, always with a focus on clean code and performance.
+I'm Nihal, a full stack developer with expertise in building robust APIs and crafting intuitive user interfaces. My journey involves developing everything from mentorship platforms to full-stack e-commerce solutions, always with a focus on clean code and performance.
 
-- 🐍 **Primary Stack**: Python, Django, FastAPI
+- 💻 **Frontend**: React, Next.js, TailwindCSS, Framer Motion
+- 🐍 **Backend**: Python, Django, FastAPI
 - 🗄️ **Databases**: PostgreSQL, Redis
 - 🐳 **Infrastructure**: Docker, Gunicorn
 - ⚡ **Real-time**: WebSockets
@@ -17,7 +18,8 @@ I'm Nihal, a backend specialist with expertise in building robust APIs and archi
 
 ## 🛠️ Tech Stack
 
-- **Frameworks**: Django, Django REST Framework, FastAPI
+- **Frontend**: React, Next.js, TailwindCSS, Framer Motion, JavaScript/TypeScript
+- **Backend**: Django, Django REST Framework, FastAPI, Python
 - **Databases**: PostgreSQL, Redis
 - **DevOps**: Docker, Docker Compose
 - **Communications**: WebSockets, REST APIs
